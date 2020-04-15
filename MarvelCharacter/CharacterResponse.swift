@@ -1,9 +1,27 @@
-//
-//  CharacterResponse.swift
-//  MarvelCharacter
-//
-//  Created by Wasith Theerapattrathamrong on 15/4/2563 BE.
-//  Copyright © 2563 Wasith Theerapattrathamrong. All rights reserved.
-//
-
 import Foundation
+
+struct CharacterResponse: Decodable {
+
+  let data: CharacterData
+}
+
+struct CharacterData: Decodable {
+
+  let results: [Character]
+}
+
+struct Character: Decodable {
+
+  let name: String
+  let thumbnail: CharacterThumbnail
+
+  var thumbnailURL: URL {
+    return URL(string: "\(thumbnail.path)\(thumbnail.extension)")!
+  }
+}
+
+struct CharacterThumbnail: Decodable {
+
+  let path: String
+  let `extension`: String
+}
