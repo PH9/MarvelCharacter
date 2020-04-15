@@ -2,10 +2,16 @@ import UIKit
 
 class MarvelCharacterDataSource: NSObject, UITableViewDataSource {
 
-  private var values: [[String]] = []
+  private var values: [[Character]] = [[]]
 
   enum Section: Int {
     case name
+  }
+
+  func load(_ characters: [Character]) {
+    values.removeAll()
+    values = [[]]
+    values[Section.name.rawValue] = characters
   }
 
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -18,7 +24,7 @@ class MarvelCharacterDataSource: NSObject, UITableViewDataSource {
         fatalError("Could not dequeue \(CharacterNameCell.reuseIdentifier)")
     }
 
-    let name = values[indexPath.section][indexPath.row]
+    let name = values[indexPath.section][indexPath.row].name
 
     cell.configureWith(name)
 
