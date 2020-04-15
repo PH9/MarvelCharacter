@@ -13,6 +13,7 @@ struct CharacterData: Decodable {
 struct Character: Decodable {
 
   let name: String
+  let description: String
   let thumbnail: CharacterThumbnail
 
   var thumbnailURL: URL {

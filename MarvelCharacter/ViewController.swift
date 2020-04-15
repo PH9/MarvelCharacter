@@ -2,6 +2,8 @@ import UIKit
 
 class ViewController: UITableViewController {
 
+  @IBOutlet weak var searchByNameTextField: UITextField!
+
   let dataSource = MarvelCharacterDataSource()
   let viewModel = ViewModel()
 
@@ -9,8 +11,12 @@ class ViewController: UITableViewController {
     super.viewDidLoad()
 
     tableView.dataSource = dataSource
+  }
 
-    viewModel.getCharacters { result in
+  @IBAction func search(_ sender: Any) {
+    let name = searchByNameTextField.text!
+
+    viewModel.getCharacters(name: name) { result in
       switch result {
       case .success(let characters):
         self.dataSource.load(characters)
