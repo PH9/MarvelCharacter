@@ -1,4 +1,5 @@
 import UIKit
+import Kingfisher
 
 class CharacterProfileViewController: UIViewController {
 
@@ -25,7 +26,8 @@ class CharacterProfileViewController: UIViewController {
     let vc = instantiate()
     _ = vc.view
 
-    // TODO: Thumbnail
+    debugPrint(character.thumbnailURL)
+    vc.thumnailImageView.kf.setImage(with: character.thumbnailURL)
     vc.nameLabel.text = character.name
     vc.descriptionLabel.text = character.description
 

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -149,7 +149,6 @@
 				69A2EB2F77AB9A318CB5708E /* Pods-MarvelCharacterTests.debug.xcconfig */,
 				1BDA7460A3B2CF2F9496C7A2 /* Pods-MarvelCharacterTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -288,7 +287,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "swiftlint autocorrect --format\nswiftlint\n";
+			shellScript = "
+";
 		};
 		280CDC63A9C927ACA1B85D13 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

@@ -17,7 +17,7 @@ struct Character: Decodable {
   let thumbnail: CharacterThumbnail
 
   var thumbnailURL: URL {
-    return URL(string: "\(thumbnail.path)\(thumbnail.extension)")!
+    return URL(string: "\(thumbnail.path)/portrait_xlarge.\(thumbnail.extension)")!
   }
 }
 
