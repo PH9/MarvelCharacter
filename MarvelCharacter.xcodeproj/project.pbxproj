@@ -14,6 +14,8 @@
 		16F92D5D2446FCAD006D9D80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16F92D5C2446FCAD006D9D80 /* Assets.xcassets */; };
 		16F92D602446FCAD006D9D80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16F92D5E2446FCAD006D9D80 /* LaunchScreen.storyboard */; };
 		16F92D6B2446FCAE006D9D80 /* MarvelCharacterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F92D6A2446FCAE006D9D80 /* MarvelCharacterTests.swift */; };
+		16F92D772446FD9A006D9D80 /* CharacterNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F92D762446FD9A006D9D80 /* CharacterNameCell.swift */; };
+		16F92D792446FDF2006D9D80 /* MarvelCharacterDataSrouce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F92D782446FDF2006D9D80 /* MarvelCharacterDataSrouce.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		16F92D662446FCAE006D9D80 /* MarvelCharacterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelCharacterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F92D6A2446FCAE006D9D80 /* MarvelCharacterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCharacterTests.swift; sourceTree = "<group>"; };
 		16F92D6C2446FCAE006D9D80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16F92D762446FD9A006D9D80 /* CharacterNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterNameCell.swift; sourceTree = "<group>"; };
+		16F92D782446FDF2006D9D80 /* MarvelCharacterDataSrouce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCharacterDataSrouce.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +83,15 @@
 		16F92D522446FCAC006D9D80 /* MarvelCharacter */ = {
 			isa = PBXGroup;
 			children = (
+				16F92D612446FCAD006D9D80 /* Info.plist */,
 				16F92D532446FCAD006D9D80 /* AppDelegate.swift */,
+				16F92D762446FD9A006D9D80 /* CharacterNameCell.swift */,
 				16F92D552446FCAD006D9D80 /* SceneDelegate.swift */,
 				16F92D572446FCAD006D9D80 /* ViewController.swift */,
-				16F92D592446FCAD006D9D80 /* Main.storyboard */,
 				16F92D5C2446FCAD006D9D80 /* Assets.xcassets */,
 				16F92D5E2446FCAD006D9D80 /* LaunchScreen.storyboard */,
-				16F92D612446FCAD006D9D80 /* Info.plist */,
+				16F92D592446FCAD006D9D80 /* Main.storyboard */,
+				16F92D782446FDF2006D9D80 /* MarvelCharacterDataSrouce.swift */,
 			);
 			path = MarvelCharacter;
 			sourceTree = "<group>";
@@ -106,6 +112,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16F92D6F2446FCAE006D9D80 /* Build configuration list for PBXNativeTarget "MarvelCharacter" */;
 			buildPhases = (
+				16F92D752446FCE6006D9D80 /* Swiftlint */,
 				16F92D4C2446FCAC006D9D80 /* Sources */,
 				16F92D4D2446FCAC006D9D80 /* Frameworks */,
 				16F92D4E2446FCAC006D9D80 /* Resources */,
@@ -195,11 +202,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16F92D752446FCE6006D9D80 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "swiftlint autocorrect --format\nswiftlint\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		16F92D4C2446FCAC006D9D80 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16F92D792446FDF2006D9D80 /* MarvelCharacterDataSrouce.swift in Sources */,
+				16F92D772446FD9A006D9D80 /* CharacterNameCell.swift in Sources */,
 				16F92D582446FCAD006D9D80 /* ViewController.swift in Sources */,
 				16F92D542446FCAD006D9D80 /* AppDelegate.swift in Sources */,
 				16F92D562446FCAD006D9D80 /* SceneDelegate.swift in Sources */,
