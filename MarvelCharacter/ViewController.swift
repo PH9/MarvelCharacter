@@ -29,4 +29,10 @@ class ViewController: UITableViewController {
     }
   }
 
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let character = viewModel.lastResponse[indexPath.row]
+    let vc = CharacterProfileViewController.configureWith(character)
+    navigationController?.pushViewController(vc, animated: true)
+  }
+
 }

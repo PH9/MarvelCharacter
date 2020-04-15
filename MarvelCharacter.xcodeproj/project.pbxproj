@@ -19,6 +19,8 @@
 		16F92D7B24470189006D9D80 /* CharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F92D7A24470189006D9D80 /* CharacterResponse.swift */; };
 		16F92D7D244701D2006D9D80 /* MarvelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F92D7C244701D2006D9D80 /* MarvelError.swift */; };
 		16F92D7F244703CF006D9D80 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F92D7E244703CF006D9D80 /* ViewModel.swift */; };
+		16F92D8124470758006D9D80 /* CharacterProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16F92D8024470758006D9D80 /* CharacterProfile.storyboard */; };
+		16F92D83244707ED006D9D80 /* CharacterProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F92D82244707ED006D9D80 /* CharacterProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		16F92D7A24470189006D9D80 /* CharacterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterResponse.swift; sourceTree = "<group>"; };
 		16F92D7C244701D2006D9D80 /* MarvelError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelError.swift; sourceTree = "<group>"; };
 		16F92D7E244703CF006D9D80 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		16F92D8024470758006D9D80 /* CharacterProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CharacterProfile.storyboard; sourceTree = "<group>"; };
+		16F92D82244707ED006D9D80 /* CharacterProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +94,10 @@
 			isa = PBXGroup;
 			children = (
 				16F92D612446FCAD006D9D80 /* Info.plist */,
+				16F92D8024470758006D9D80 /* CharacterProfile.storyboard */,
 				16F92D532446FCAD006D9D80 /* AppDelegate.swift */,
 				16F92D762446FD9A006D9D80 /* CharacterNameCell.swift */,
+				16F92D82244707ED006D9D80 /* CharacterProfileViewController.swift */,
 				16F92D7A24470189006D9D80 /* CharacterResponse.swift */,
 				16F92D782446FDF2006D9D80 /* MarvelCharacterDataSrouce.swift */,
 				16F92D7C244701D2006D9D80 /* MarvelError.swift */,
@@ -196,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16F92D8124470758006D9D80 /* CharacterProfile.storyboard in Resources */,
 				16F92D602446FCAD006D9D80 /* LaunchScreen.storyboard in Resources */,
 				16F92D5D2446FCAD006D9D80 /* Assets.xcassets in Resources */,
 				16F92D5B2446FCAD006D9D80 /* Main.storyboard in Resources */,
@@ -239,6 +246,7 @@
 			files = (
 				16F92D792446FDF2006D9D80 /* MarvelCharacterDataSrouce.swift in Sources */,
 				16F92D772446FD9A006D9D80 /* CharacterNameCell.swift in Sources */,
+				16F92D83244707ED006D9D80 /* CharacterProfileViewController.swift in Sources */,
 				16F92D7B24470189006D9D80 /* CharacterResponse.swift in Sources */,
 				16F92D582446FCAD006D9D80 /* ViewController.swift in Sources */,
 				16F92D542446FCAD006D9D80 /* AppDelegate.swift in Sources */,

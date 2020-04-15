@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H65-E5-nzH">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Character Profile View Controller-->
+        <scene sceneID="316-qN-gU3">
+            <objects>
+                <viewController storyboardIdentifier="CharacterProfileViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="H65-E5-nzH" customClass="CharacterProfileViewController" customModule="MarvelCharacter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fya-Gx-vhK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tzm-4X-FMI">
+                                <rect key="frame" x="16" y="60" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Jj3-3o-dOZ"/>
+                                    <constraint firstAttribute="height" constant="120" id="xni-yN-CA3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5y-aS-DhN">
+                                <rect key="frame" x="152" y="159" width="246" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYQ-ZS-G1L">
+                                <rect key="frame" x="16" y="196" width="382" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tzm-4X-FMI" firstAttribute="leading" secondItem="tFi-t6-wMk" secondAttribute="leading" constant="16" id="FQP-lj-oYb"/>
+                            <constraint firstItem="u5y-aS-DhN" firstAttribute="leading" secondItem="tzm-4X-FMI" secondAttribute="trailing" constant="16" id="MGL-lY-KMy"/>
+                            <constraint firstItem="VYQ-ZS-G1L" firstAttribute="leading" secondItem="tzm-4X-FMI" secondAttribute="leading" id="cnk-Rv-ubA"/>
+                            <constraint firstItem="tzm-4X-FMI" firstAttribute="top" secondItem="tFi-t6-wMk" secondAttribute="top" constant="16" id="eg8-jJ-7qp"/>
+                            <constraint firstItem="VYQ-ZS-G1L" firstAttribute="top" secondItem="tzm-4X-FMI" secondAttribute="bottom" constant="16" id="g1i-aJ-6TN"/>
+                            <constraint firstItem="u5y-aS-DhN" firstAttribute="bottom" secondItem="tzm-4X-FMI" secondAttribute="bottom" id="llQ-U8-M4b"/>
+                            <constraint firstItem="tFi-t6-wMk" firstAttribute="trailing" secondItem="u5y-aS-DhN" secondAttribute="trailing" constant="16" id="sd3-uG-R4S"/>
+                            <constraint firstItem="tFi-t6-wMk" firstAttribute="trailing" secondItem="VYQ-ZS-G1L" secondAttribute="trailing" constant="16" id="u0B-6a-8VA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tFi-t6-wMk"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="VYQ-ZS-G1L" id="7QA-zb-Mbb"/>
+                        <outlet property="nameLabel" destination="u5y-aS-DhN" id="RDp-l8-V8J"/>
+                        <outlet property="thumnailImageView" destination="tzm-4X-FMI" id="L6S-Yp-zKb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S5q-lP-pQL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104" y="185"/>
+        </scene>
+    </scenes>
+</document>
