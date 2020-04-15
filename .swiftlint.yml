@@ -1,1 +1,4 @@
 indentation: 2
+
+excluded:
+ - Pods
